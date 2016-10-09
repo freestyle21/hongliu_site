@@ -1,0 +1,13 @@
+{
+    "code": 200,
+    "message": "success",
+    "data": [{
+        "name": "深圳",
+        "id": 2,
+        "p": "Shen Zhen"
+    },{
+        "name": "北京",
+        "id": 1,
+        "p": "Bei Jing"
+    }]
+}
