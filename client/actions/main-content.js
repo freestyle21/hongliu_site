@@ -4,7 +4,7 @@ import { actionFetch } from 'common/http'
 export default {
     fetchMetrics(callback) {
         return actionFetch({
-            url: '/daijia/v1/daijia/metricTypes/',
+            url: '/metricTypes/',
             actionType: types.FETCH_METRICS_SUCCESS,
             callback
         })
