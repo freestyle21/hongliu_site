@@ -35,7 +35,7 @@ export default class MainContent extends Component {
           #header {
             position: fixed;
             z-index: 999;
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(34,34,34,0.9);
             border-bottom: 1px solid transparent;
             transition: border .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), background .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
           }

@@ -9,6 +9,7 @@ module.exports = {
   ],
 
   resolve: {
+    alias: {},
     extensions: ['', '.js', '.jsx'],
     fallback: path.join(__dirname, "client")
   },

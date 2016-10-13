@@ -24,11 +24,11 @@ function onError(error) {
   // 处理特定错误
   switch (error.code) {
     case 'EACCES':
-      // log.error('Port ' + server.port + ' requires elevated privileges');
+      console.error('Port ' + server.port + ' requires elevated privileges');
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      // log.error('Port ' + server.port + ' is already in use');
+      console.error('Port ' + server.port + ' is already in use');
       process.exit(1);
       break;
     default:

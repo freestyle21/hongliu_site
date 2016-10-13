@@ -69,8 +69,8 @@ export default class Header extends React.Component {
         <Row>
           <Col lg={4} md={6} sm={7} xs={24}>
             <Link to="/" id="logo">
-              <img alt="logo" src="https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg" />
-              <span>Ant Design</span>
+              <img alt="logo" src="./logo.png" />
+              <span>洪流武道馆</span>
             </Link>
           </Col>
           <Col className={`nav ${this.state.menuVisible ? 'nav-show' : ''}`}
@@ -79,17 +79,17 @@ export default class Header extends React.Component {
             <Menu mode={this.state.menuMode} selectedKeys={[activeMenuItem]} id="nav">
               <Menu.Item key="home">
                 <Link to="/main">
-                  home
+                  首页
                 </Link>
               </Menu.Item>
               <Menu.Item key="a">
                 <Link to="/a">
-                  practice
+                  道馆
                 </Link>
               </Menu.Item>
               <Menu.Item key="b">
                 <Link to="b">
-                  pattern
+                  咨询
                 </Link>
               </Menu.Item>
             </Menu>
