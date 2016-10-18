@@ -19,14 +19,14 @@ export default class Banner extends React.Component {
       <section id="banner">
         <ScrollElement scrollName="banner" className="page">
           <QueueAnim className="banner-text-wrapper" type={this.typeFunc} delay={300}>
-            <h2 key="h2">洪流 <p>武道</p></h2>
+            <h2 key="h2">洪流 <p>武</p>道馆</h2>
             <p key="content">习武修德 武者义也</p>
             <span className="line" key="line" />
             <div key="button1" className="start-button clearfix">
-              <Link to="/docs/spec/introduce">
+              <Link to="/description">
                 道馆介绍
               </Link>
-              <Link to="/docs/spec/react">
+              <Link to="/signup">
                 咨询报名
               </Link>
             </div>

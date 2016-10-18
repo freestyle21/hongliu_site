@@ -12,7 +12,7 @@
       <title>洪流武道馆</title>
 
       <!-- script -->
-      <!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=c01ab6f7cd6446ae11232274fa67f9df"></script> -->
+      <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=c01ab6f7cd6446ae11232274fa67f9df"></script>
   </head>
   <body>
     <div id="react-content">
@@ -22,14 +22,14 @@
         window.version = Date.parse(new Date('2016/09/24'))
 
         var bundle = document.createElement("script")
-        bundle.setAttribute("type", "text/javascript")  
+        bundle.setAttribute("type", "text/javascript")
         bundle.setAttribute("src", '/client/bundle.js?t='+version)
 
-        var heads = document.getElementsByTagName("head");  
+        var heads = document.getElementsByTagName("head");
         if(heads.length) {
-            heads[0].appendChild(bundle);  
+            heads[0].appendChild(bundle);
         } else {
-            document.documentElement.appendChild(bundle);  
+            document.documentElement.appendChild(bundle);
         }
     </script>
   </body>

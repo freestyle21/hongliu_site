@@ -22,7 +22,7 @@ export default class Header extends React.Component {
     }, 100);
 
     this.onDocumentClick = (e) => {
-      if (document.querySelector('#header .nav').contains(e.target)) {
+      if (document.querySelector('#header .row').contains(e.target)) {
         return;
       }
       this.setState({
@@ -52,7 +52,7 @@ export default class Header extends React.Component {
 
   render() {
     const { location, picked } = this.props;
-    
+
     let activeMenuItem = 'home';
     // if (activeMenuItem === 'components' || location.pathname === 'changelog') {
     //   activeMenuItem = 'docs/react';
@@ -73,26 +73,18 @@ export default class Header extends React.Component {
               <span>洪流武道馆</span>
             </Link>
           </Col>
-          <Col className={`nav ${this.state.menuVisible ? 'nav-show' : ''}`}
+          <Col className={`header-nav ${this.state.menuVisible ? 'nav-show' : ''}`}
             lg={20} md={18} sm={17} xs={0} style={{ display: 'block' }}
           >
-            <Menu mode={this.state.menuMode} selectedKeys={[activeMenuItem]} id="nav">
-              <Menu.Item key="home">
-                <Link to="/main">
-                  首页
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="a">
-                <Link to="/a">
-                  道馆
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="b">
-                <Link to="b">
-                  咨询
-                </Link>
-              </Menu.Item>
-            </Menu>
+            <Link to="/main" activeClassName="header-nav-active">
+              首页
+            </Link>
+            <Link to="/description" activeClassName="header-nav-active">
+              道馆
+            </Link>
+            <Link to="/signup" activeClassName="header-nav-active">
+              咨询
+            </Link>
           </Col>
         </Row>
       </header>

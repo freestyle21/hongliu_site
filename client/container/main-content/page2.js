@@ -11,17 +11,14 @@ export default function Page2() {
       className="content-wrapper page" playScale={1} replay
       hideProps={{ image: { reverse: true } }}
     >
-      <QueueAnim className="text-wrapper left-text" delay={300} key="text"
+      <QueueAnim className="text-wrapper left-text text-wrapper-jiaoxue" delay={300} key="text"
         duration={550} type="bottom" leaveReverse
       >
-        <h2 key="h2">design-pattern</h2>
-        <p key="p" style={{ maxWidth: 260 }}>pattern</p>
-        <div key="button">
-          <Link to="/docs/pattern/navigation">
-            <Button type="primary" size="large">
-              learn-more
-              <Icon type="right" />
-            </Button>
+        <h2 key="h2">教学内容</h2>
+        <p key="p" style={{ maxWidth: 260 }}>散打 拳击 自由搏击 综合格斗 空手道 跆拳道 女子防身术</p>
+        <div key="button1" className="hongliu-button clearfix">
+          <Link to="/signup">
+            立即报名 >>
           </Link>
         </div>
       </QueueAnim>
