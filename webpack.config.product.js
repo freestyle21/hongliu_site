@@ -4,21 +4,20 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   entry: [
-    'webpack-hot-middleware/client',
     path.resolve(__dirname, 'client/index.js')
   ],
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    fallback: path.join(__dirname, "node_modules")
+    fallback: path.join(__dirname, "client")
   },
   resolveLoader: {
     root: path.join(__dirname, "node_modules")
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'client'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/client/'
   },
 
   module: {
@@ -39,6 +38,13 @@ module.exports = {
       loader: ExtractTextPlugin.extract(
         'css?sourceMap&-restructuring!' + 'autoprefixer-loader!' + 'less?sourceMap'
       )
+    }, {
+        test: /\.(woff|eot|ttf|svg)$/i,
+        loader: 'url',
+        query: {
+            limit: 10000,
+            name: 'fonts/[hash:8].[name].[ext]'
+        }
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract(

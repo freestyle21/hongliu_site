@@ -12,10 +12,10 @@
   "scripts": {
     "start": "node-dev server/bin/www.js",
     "dev": "pm2 stop nskybus;NODE_ENV=development PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name nskybus",
-    "production": "pm2 stop nskybus;NODE_ENV=production PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name nskybus",
+    "production": "npm run build;pm2 stop nskybus;NODE_ENV=production PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name nskybus",
     "test": "antd test",
     "lint": "eslint --ext .js,.jsx src",
-    "build": "webpack"
+    "build": "webpack --progress --profile --colors --config webpack.config.product.js"
   },
   "pre-commit": [
     "lint"
@@ -40,6 +40,7 @@
     "redux-thunk": "^1.0.3"
   },
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
     "babel-code-frame": "^6.3.13",

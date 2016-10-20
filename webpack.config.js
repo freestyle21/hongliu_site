@@ -17,7 +17,7 @@ module.exports = {
     root: path.join(__dirname, "node_modules")
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'client'),
     filename: 'bundle.js',
     publicPath: '/client/'
   },
