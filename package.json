@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "node-dev server/bin/www.js",
-    "dev": "pm2 stop nskybus;NODE_ENV=development PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name nskybus",
-    "production": "npm run build;pm2 stop nskybus;NODE_ENV=production PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name nskybus",
+    "dev": "pm2 stop hongliu;NODE_ENV=development PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name hongliu",
+    "production": "npm run build;pm2 stop hongliu;NODE_ENV=production PM2_NODE_OPTIONS='--harmony' pm2 start server/bin/www.js --name hongliu",
     "test": "antd test",
     "lint": "eslint --ext .js,.jsx src",
     "build": "webpack --progress --profile --colors --config webpack.config.product.js"
