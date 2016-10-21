@@ -1,0 +1,190 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+require('./index.less');
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require('antd');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Option = _antd.Select.Option;
+
+var Footer = function (_React$Component) {
+  (0, _inherits3.default)(Footer, _React$Component);
+
+  function Footer() {
+    (0, _classCallCheck3.default)(this, Footer);
+    return (0, _possibleConstructorReturn3.default)(this, (Footer.__proto__ || (0, _getPrototypeOf2.default)(Footer)).apply(this, arguments));
+  }
+
+  (0, _createClass3.default)(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'footer',
+        { id: 'footer' },
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h2',
+              null,
+              '\u4E86\u89E3\u66F4\u591A'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank ', href: 'http://weibo.com/cnhongliu' },
+                '\u5FAE\u535A'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank ', href: '/' },
+                '\u5B98\u7F51'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank ', href: '/' },
+                '\u626B\u7801\u5173\u6CE8'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement('img', { className: 'footer-weixin', src: '/client/styles/img/weixin.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h2',
+              null,
+              '\u53CB\u94FE'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank', href: 'http://www.zjws.net/' },
+                '\u6D59\u6C5F\u7701\u6B66\u672F\u534F\u4F1A'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank', href: 'http://wushu.sport.org.cn/' },
+                '\u4E2D\u56FD\u6B66\u672F\u534F\u4F1A'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank', href: 'http://www.sport.org.cn/' },
+                '\u4E2D\u534E\u5168\u56FD\u4F53\u80B2\u603B\u4F1A'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank', href: 'http://www.kunlunjue.com/' },
+                '\u6606\u4ED1\u51B3'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'a',
+                { target: '_blank', href: 'http://www.mmafighting.com/' },
+                'MMA'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'div',
+              null,
+              'Copyright \xA9 2001 - 2016 \u6D2A\u6D41\u6B66\u9053'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '\u5730\u5740:\u5FB7\u80DC\u8DEF312\u53F7\u5FB7\u80DC\u5DF71\u53F7\u6E05\u6C34\u516C\u5BD3'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '\u624B\u673A/\u5FAE\u4FE1: 13456807950'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              'Powered by ',
+              _react2.default.createElement(
+                'a',
+                { href: '/' },
+                '\u6D2A\u6D41\u6B66\u9053'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/footer/index.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/footer/index.js"); } } })();

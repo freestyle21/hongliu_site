@@ -1,0 +1,128 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends2 = require('babel-runtime/helpers/extends');
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+require('./index.less');
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require('antd');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Online = function (_Component) {
+    (0, _inherits3.default)(Online, _Component);
+
+    function Online(props) {
+        (0, _classCallCheck3.default)(this, Online);
+
+        var _this = (0, _possibleConstructorReturn3.default)(this, (Online.__proto__ || (0, _getPrototypeOf2.default)(Online)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    (0, _createClass3.default)(Online, [{
+        key: 'handleSubmit',
+        value: function handleSubmit() {
+            _antd.message.info('待开发, 稍等片刻');
+            return false;
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var getFieldProps = this.props.form.getFieldProps;
+
+            var formItemLayout = {
+                labelCol: { span: 6 },
+                wrapperCol: { span: 14 }
+            };
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'online' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'content-title' },
+                    '\u5728\u7EBF\u62A5\u540D'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'content-item' },
+                    _react2.default.createElement('div', { className: 'content-item-title' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'content-item-content' },
+                        _react2.default.createElement(
+                            _antd.Form,
+                            { horizontal: true, onSubmit: this.handleSubmit },
+                            _react2.default.createElement(
+                                _antd.Form.Item,
+                                (0, _extends3.default)({}, formItemLayout, {
+                                    label: '\u59D3\u540D:'
+                                }),
+                                _react2.default.createElement(_antd.Input, (0, _extends3.default)({ type: 'text', placeholder: '\u8BF7\u8F93\u5165\u540D\u5B57' }, getFieldProps('name')))
+                            ),
+                            _react2.default.createElement(
+                                _antd.Form.Item,
+                                (0, _extends3.default)({}, formItemLayout, {
+                                    label: '\u7535\u8BDD:'
+                                }),
+                                _react2.default.createElement(_antd.Input, (0, _extends3.default)({ type: 'text', placeholder: '\u8BF7\u8F93\u5165\u7535\u8BDD\u53F7\u7801' }, getFieldProps('password')))
+                            ),
+                            _react2.default.createElement(
+                                _antd.Form.Item,
+                                (0, _extends3.default)({}, formItemLayout, {
+                                    label: 'QQ:'
+                                }),
+                                _react2.default.createElement(_antd.Input, (0, _extends3.default)({ type: 'text', placeholder: '\u8BF7\u8F93\u5165QQ' }, getFieldProps('qq')))
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'content-item-controller' },
+                                _react2.default.createElement(
+                                    _antd.Button,
+                                    { type: 'primary', htmlType: 'submit' },
+                                    '\u63D0\u4EA4'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+    return Online;
+}(_react.Component);
+
+exports.default = _antd.Form.create()(Online);
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/signup/online/index.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/signup/online/index.js"); } } })();

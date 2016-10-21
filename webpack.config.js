@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
+var HappyPack = require('happypack')
 
 module.exports = {
   entry: [
@@ -25,7 +26,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
+      loader: 'happypack/loader',
       query: {
         presets: [require.resolve('babel-preset-es2015')],
         plugins: [require.resolve('babel-plugin-transform-runtime')]
@@ -61,6 +62,9 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new HappyPack({
+        loaders: ['react-hot-loader/webpack', 'babel'],
+    }),
     new ExtractTextPlugin('[name].css')
   ]
 }

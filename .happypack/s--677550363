@@ -1,0 +1,98 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+require('./index.less');
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _link = require('./link');
+
+var _link2 = _interopRequireDefault(_link);
+
+var _banner = require('./banner');
+
+var _banner2 = _interopRequireDefault(_banner);
+
+var _page = require('./page1');
+
+var _page2 = _interopRequireDefault(_page);
+
+var _page3 = require('./page2');
+
+var _page4 = _interopRequireDefault(_page3);
+
+var _page5 = require('./page3');
+
+var _page6 = _interopRequireDefault(_page5);
+
+var _page7 = require('./page4');
+
+var _page8 = _interopRequireDefault(_page7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MainContent = function (_Component) {
+  (0, _inherits3.default)(MainContent, _Component);
+
+  function MainContent(props) {
+    (0, _classCallCheck3.default)(this, MainContent);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (MainContent.__proto__ || (0, _getPrototypeOf2.default)(MainContent)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  (0, _createClass3.default)(MainContent, [{
+    key: 'getStyle',
+    value: function getStyle() {
+      return '\n          #react-content,\n          #react-content > div {\n            height: 100%;\n          }\n          .main-wrapper {\n            background: transparent;\n            width: auto;\n            margin: 0;\n            border-radius: 0;\n            padding: 0;\n            overflow: unset;\n            display: inline;\n            min-height: 600px;\n          }\n          #header {\n            position: fixed;\n            z-index: 999;\n            background: rgba(34,34,34,0.9);\n            border-bottom: 1px solid transparent;\n            transition: border .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), background .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);\n          }\n          #header .ant-select-selection,\n          #header .ant-menu {\n            background: transparent;\n          }\n          #header.home-nav-white {\n            background: rgba(255, 255, 255, 0.9);\n            border-bottom-color: #EBEDEE;\n          }\n          .home-nav-white #search-box {\n            border-left-color: #EBEDEE;\n          }\n          .home-nav-white #nav a {\n            color: #666;\n          }\n          .home-nav-white #lang {\n            color: #666;\n            border-color: #666;\n          }\n          .nav-phone-icon:before {\n            background: #eee;\n            box-shadow: 0 7px 0 0 #eee, 0 14px 0 0 #eee;\n          }\n          .home-nav-white .nav-phone-icon:before {\n            background: #777;\n            box-shadow: 0 7px 0 0 #777, 0 14px 0 0 #777;\n          }\n          #lang,\n          #nav a {\n            color: #eee;\n            transition: color 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);\n          }\n          #search-box {\n            border-left-color: rgba(235, 237, 238, .5);\n            transition: border 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);\n          }\n          section {\n            height: 100%;\n            width: 100%;\n            background: #fff;\n          }\n          #footer {\n            background: #000;\n          }\n          #footer,\n          #footer h2 {\n            color: #999;\n          }\n          #footer a {\n            color: #eee;\n          }\n          .down {\n            animation: upDownMove 1.2s ease-in-out infinite;\n          }\n        ';
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'main-wrapper' },
+        _react2.default.createElement(_link2.default, null),
+        _react2.default.createElement(_banner2.default, null),
+        _react2.default.createElement(_page2.default, null),
+        _react2.default.createElement(_page4.default, null),
+        _react2.default.createElement(_page6.default, null),
+        _react2.default.createElement(_page8.default, null),
+        _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: this.getStyle() } })
+      );
+    }
+  }]);
+  return MainContent;
+}(_react.Component);
+
+exports.default = MainContent;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/main-content/index.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/main-content/index.js"); } } })();

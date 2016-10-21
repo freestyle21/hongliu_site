@@ -1,0 +1,108 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+require('./index.less');
+
+var _reactRouter = require('react-router');
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Signup = function (_Component) {
+    (0, _inherits3.default)(Signup, _Component);
+
+    function Signup(props) {
+        (0, _classCallCheck3.default)(this, Signup);
+
+        var _this = (0, _possibleConstructorReturn3.default)(this, (Signup.__proto__ || (0, _getPrototypeOf2.default)(Signup)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    (0, _createClass3.default)(Signup, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'signup' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'signup-block' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'signup-left' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'signup-left-list' },
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'signup-left-list-item' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: '/signup/addr', activeClassName: 'signup-left-list-item-active' },
+                                    '\u9053\u9986\u5730\u5740'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'signup-left-list-item' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: '/signup/way', activeClassName: 'signup-left-list-item-active' },
+                                    '\u8054\u7CFB\u65B9\u5F0F'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'signup-left-list-item' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: '/signup/online', activeClassName: 'signup-left-list-item-active' },
+                                    '\u5728\u7EBF\u62A5\u540D'
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'signup-content' },
+                        this.props.children
+                    )
+                )
+            );
+        }
+    }]);
+    return Signup;
+}(_react.Component);
+
+exports.default = Signup;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/signup/index.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/signup/index.js"); } } })();

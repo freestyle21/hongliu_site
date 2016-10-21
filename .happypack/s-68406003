@@ -1,0 +1,74 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Page3;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = require('react-router');
+
+var _rcTweenOne = require('rc-tween-one');
+
+var _rcTweenOne2 = _interopRequireDefault(_rcTweenOne);
+
+var _ScrollOverPack = require('rc-scroll-anim/lib/ScrollOverPack');
+
+var _ScrollOverPack2 = _interopRequireDefault(_ScrollOverPack);
+
+var _antd = require('antd');
+
+var _rcQueueAnim = require('rc-queue-anim');
+
+var _rcQueueAnim2 = _interopRequireDefault(_rcQueueAnim);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Page3() {
+  return _react2.default.createElement(
+    _ScrollOverPack2.default,
+    { scrollName: 'page3', className: 'content-wrapper page', playScale: 1, replay: true,
+      hideProps: { image: { reverse: true } }
+    },
+    _react2.default.createElement(_rcTweenOne2.default, { key: 'image', className: 'image3 image-wrapper',
+      animation: { x: 0, opacity: 1, duration: 550 },
+      style: { transform: 'translateX(-100px)', opacity: 0 }
+    }),
+    _react2.default.createElement(
+      _rcQueueAnim2.default,
+      { className: 'text-wrapper text-wrapper-shifu', delay: 300, key: 'text', duration: 550,
+        leaveReverse: true, style: { top: '40%' }
+      },
+      _react2.default.createElement(
+        'div',
+        { className: 'content-wrapper-shifu' },
+        '\u91D1\u6D2A\u6D41',
+        _react2.default.createElement(
+          'span',
+          { className: 'content-wrapper-shifu-des', style: { maxWidth: 280 } },
+          '\u4E25\u8BDA\u6D41\u7A7A\u624B\u9053/\u5C11\u6797\u62F3\u6D41'
+        )
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        '1992\u5E74\u5F00\u59CB\u5B66\u4E60\u5C11\u6797\u6B66\u672F\u3001\u6563\u624B\uFF0C\u6B66\u9053\u751F\u6DAF26\u5E74\uFF0C\u591A\u6B21\u83B7\u5F97\u56FD\u9645\u7EA7\u8DC6\u62F3\u9053\u3001\u7A7A\u624B\u9053\u3001\u6563\u6253\u3001\u62F3\u51FB\u6BD4\u8D5B\u51A0\u519B\uFF0C\u57F9\u517B\u4E86\u5F88\u591A\u56FD\u9645\u6B66\u9053\u9AD8\u624B\u3002'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        '2006\u5E74\u8D74\u65E5\u672C\u6DF1\u9020\u5728\u300C\u53B3\u8AA0\u6D41\u7A7A\u624B\u9053\u300D\u672C\u90E8\u4EFB\u4E2D\u56FD\u6B66\u672F\u6563\u624B\u6559\u7EC3\u3002'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        '2009\u5E74\u56DE\u56FD\u81F3\u4ECA\uFF0C\u5F00\u521B\u6D2A\u6D41\u6B66\u9053\u9986\uFF0C\u4EFB\u6B66\u9053\u603B\u6559\u7EC3\u3002'
+      )
+    )
+  );
+}
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/main-content/page3.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/main-content/page3.js"); } } })();

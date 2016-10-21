@@ -1,0 +1,85 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Page1;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = require('react-router');
+
+var _rcTweenOne = require('rc-tween-one');
+
+var _rcTweenOne2 = _interopRequireDefault(_rcTweenOne);
+
+var _ScrollOverPack = require('rc-scroll-anim/lib/ScrollOverPack');
+
+var _ScrollOverPack2 = _interopRequireDefault(_ScrollOverPack);
+
+var _antd = require('antd');
+
+var _rcQueueAnim = require('rc-queue-anim');
+
+var _rcQueueAnim2 = _interopRequireDefault(_rcQueueAnim);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var clientHeight = document.documentElement.clientHeight;
+function onScrollEvent(e) {
+  var header = document.getElementById('header');
+  if (e.pageY >= clientHeight) {
+    if (header.className.indexOf('home-nav-bottom') < 0) {
+      header.className += ' home-nav-bottom';
+    }
+  } else if (header.className.indexOf('home-nav-bottom') >= 0) {
+    header.className = header.className.replace(/home-nav-bottom/ig, '');
+  }
+}
+
+function Page1() {
+  return _react2.default.createElement(
+    _ScrollOverPack2.default,
+    { scrollName: 'page1', className: 'content-wrapper page',
+      playScale: 1, replay: true, scrollEvent: onScrollEvent,
+      hideProps: { image: { reverse: true } }
+    },
+    _react2.default.createElement(_rcTweenOne2.default, { key: 'image', className: 'image1 image-wrapper',
+      animation: { x: 0, opacity: 1, duration: 550 },
+      style: { transform: 'translateX(-100px)', opacity: 0 }
+    }),
+    _react2.default.createElement(
+      _rcQueueAnim2.default,
+      { className: 'text-wrapper', delay: 300, key: 'text', duration: 550, leaveReverse: true },
+      _react2.default.createElement(
+        'h2',
+        { key: 'h2' },
+        '\u6B66\u9053'
+      ),
+      _react2.default.createElement(
+        'p',
+        { key: 'p', style: { maxWidth: 410 } },
+        '\u662F\u4E00\u79CD\u6267\u7740\u8FFD\u6C42\uFF0C\u662F\u683C\u6597\u7684\u4E00\u79CD\u65B9\u5F0F\u3002'
+      ),
+      _react2.default.createElement(
+        'p',
+        { key: 'n', style: { maxWidth: 410 } },
+        '\u4E0D\u62D8\u6CE5\u4E8E\u4EFB\u4F55\u56FA\u5B9A\u7684\u5957\u8DEF\u62DB\u5F0F\uFF0C\u4EE5\u6700\u7EC8\u51FB\u5012\u6216\u6218\u80DC\u5BF9\u624B\u4E3A\u76EE\u7684\u3002'
+      ),
+      _react2.default.createElement(
+        'p',
+        { key: 'f', style: { maxWidth: 410 } },
+        '\u6B66\u9053\u662F\u5FC3\u548C\u8EAB\u4F53\u7684\u953B\u70BC\uFF0C\u4E0D\u4EC5\u662F\u4E00\u79CD\u5177\u6709\u9AD8\u5EA6\u653B\u51FB\u529B\u7684\u6280\u672F\uFF0C\u7279\u522B\u6CE8\u91CD\u793C\u8282 \u7CBE\u795E\uFF08\u52C7\u6C14\uFF0C\u52AA\u529B\u7684\u7ED3\u679C\uFF09.'
+      ),
+      _react2.default.createElement(
+        'p',
+        { key: 'q', style: { maxWidth: 410 } },
+        '\u5728\u676D\u5DDE\u5C31\u6709\u4E00\u5BB6\u7EC3\u4E60\u81EA\u7531\u640F\u51FB\u7684\u6B66\u9053\u9986\uFF0C\u540D\u53EB\u6D2A\u6D41\u6B66\u9053\u9986\u3002'
+      )
+    )
+  );
+}
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/qubaoming/test/hongliu_site/client/container/main-content/page1.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/qubaoming/test/hongliu_site/client/container/main-content/page1.js"); } } })();
