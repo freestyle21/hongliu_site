@@ -6,7 +6,7 @@
 
 var config = {
     "name": "HONG LIU",
-    "port": 8002,
+    "port": 8010,
     "version": "0.1.0",
     "goDataApi": {
         "devHost": "10.0.50.91",

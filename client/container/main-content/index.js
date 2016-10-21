@@ -2,12 +2,12 @@ import './index.less'
 
 import React, {Component, PropTypes} from 'react'
 
-import Link from './Link';
-import Banner from './Banner';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import Page3 from './Page3';
-import Page4 from './Page4';
+import Link from './link';
+import Banner from './banner';
+import Page1 from './page1';
+import Page2 from './page2';
+import Page3 from './page3';
+import Page4 from './page4';
 
 export default class MainContent extends Component {
     constructor(props) {
