@@ -1,7 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 
-var PROJECT_PATH = path.join(__dirname, 'pcs', 'dist')
+var PROJECT_PATH = path.join(__dirname, 'client')
 
 module.exports = {
     entry: {
