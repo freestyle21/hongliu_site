@@ -40,9 +40,9 @@ export default class base extends Component {
                 <div className="content-item">
                     <div className="content-item-title">武道精神</div>
                     <div className="content-item-content">
-                        <p>武道，以礼始，以礼终，要劳记。</p>
-                        <p>武道，尊师重道，以锻炼身体为主，不得随意攻击。</p>
-                        <p>武道，坚持到底，达到心体技德锻炼，磨练出坚韧不拔的意志。</p>
+                        <p>武道，尊师重道，以礼始，以礼终，要劳记。</p>
+                        <p>武道，以锻炼身体为主，不得随意攻击，要做到忍耐克己。</p>
+                        <p>武道，坚持到底，全力以赴，达到心体技德锻炼，磨练出坚韧不拔的意志。</p>
                         <p>求至高人格，守忠诚之道，养努力精神，重尊卑已，融血气之勇。</p>
                         <p>我愿为武道做出应有的贡献，为发扬武道精神，全力以赴，今天我是最棒的！</p>
                     </div>
